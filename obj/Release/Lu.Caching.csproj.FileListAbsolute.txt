@@ -1,0 +1,5 @@
+C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\bin\Release\Lu.Caching.dll
+C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\bin\Release\Lu.Caching.pdb
+C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\obj\Release\Lu.Caching.csprojResolveAssemblyReference.cache
+C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\obj\Release\Lu.Caching.dll
+C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\obj\Release\Lu.Caching.pdb
