@@ -69,5 +69,46 @@ namespace Lu.Caching
         {
             CacheInstance.RemoveItem(key);
         }
+
+
+        public Task<int> AddItemAsync(string key, object value, CacheItemPolicy policy)
+        {
+            return CacheInstance.AddItemAsync(key, value, policy);
+        }
+
+        public Task<int> AddItemAsync(string key, object value, DateTimeOffset dateTimeOffset)
+        {
+            return CacheInstance.AddItemAsync(key, value, dateTimeOffset);
+        }
+
+        public Task<int> AddItemAsync(string key, object value)
+        {
+            return CacheInstance.AddItemAsync(key, value);
+        }
+
+        public Task<object> GetItemAsync(string key)
+        {
+            return CacheInstance.GetItemAsync(key);
+        }
+
+        public Task<object> GetItemAsync(string key, bool remove)
+        {
+            return CacheInstance.GetItemAsync(key,remove);
+        }
+
+        public Task<T> GetItemAsync<T>(string key)
+        {
+            return CacheInstance.GetItemAsync<T>(key);
+        }
+
+        public Task<T> GetItemAsync<T>(string key, bool remove)
+        {
+            return CacheInstance.GetItemAsync<T>(key,remove);
+        }
+
+        public Task<int> RemoveItemAsync(string key)
+        {
+            return CacheInstance.RemoveItemAsync(key);
+        }
     }
 }
