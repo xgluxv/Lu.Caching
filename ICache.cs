@@ -19,15 +19,15 @@ namespace Lu.Caching
 
         void RemoveItem(string key);
 
-        Task<int> AddItemAsync(string key, object value, CacheItemPolicy policy);
-        Task<int> AddItemAsync(string key, object value, DateTimeOffset dateTimeOffset);
-        Task<int> AddItemAsync(string key, object value);
+        Task<bool> AddItemAsync(string key, object value, CacheItemPolicy policy);
+        Task<bool> AddItemAsync(string key, object value, DateTimeOffset dateTimeOffset);
+        Task<bool> AddItemAsync(string key, object value);
         Task<object> GetItemAsync(string key);
         Task<object> GetItemAsync(string key, bool remove);
         Task<T> GetItemAsync<T>(string key);
         Task<T> GetItemAsync<T>(string key, bool remove);
 
-        Task<int> RemoveItemAsync(string key);
+        Task<bool> RemoveItemAsync(string key);
 
 
     }

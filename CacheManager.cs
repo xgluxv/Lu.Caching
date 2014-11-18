@@ -71,17 +71,17 @@ namespace Lu.Caching
         }
 
 
-        public Task<int> AddItemAsync(string key, object value, CacheItemPolicy policy)
+        public Task<bool> AddItemAsync(string key, object value, CacheItemPolicy policy)
         {
             return CacheInstance.AddItemAsync(key, value, policy);
         }
 
-        public Task<int> AddItemAsync(string key, object value, DateTimeOffset dateTimeOffset)
+        public Task<bool> AddItemAsync(string key, object value, DateTimeOffset dateTimeOffset)
         {
             return CacheInstance.AddItemAsync(key, value, dateTimeOffset);
         }
 
-        public Task<int> AddItemAsync(string key, object value)
+        public Task<bool> AddItemAsync(string key, object value)
         {
             return CacheInstance.AddItemAsync(key, value);
         }
@@ -106,7 +106,7 @@ namespace Lu.Caching
             return CacheInstance.GetItemAsync<T>(key,remove);
         }
 
-        public Task<int> RemoveItemAsync(string key)
+        public Task<bool> RemoveItemAsync(string key)
         {
             return CacheInstance.RemoveItemAsync(key);
         }

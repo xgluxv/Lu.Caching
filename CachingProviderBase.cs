@@ -71,22 +71,22 @@ namespace Lu.Caching
 
 
 
-        Task<int> ICache.AddItemAsync(string key, object value, CacheItemPolicy policy)
+        Task<bool> ICache.AddItemAsync(string key, object value, CacheItemPolicy policy)
         {
             AddItem(key, value, policy);
-            return Task.FromResult(0);
+            return Task.FromResult(true);
         }
 
-        Task<int> ICache.AddItemAsync(string key, object value, DateTimeOffset dateTimeOffset)
+        Task<bool> ICache.AddItemAsync(string key, object value, DateTimeOffset dateTimeOffset)
         {
             AddItem(key, value, dateTimeOffset);
-            return Task.FromResult(0);
+            return Task.FromResult(true);
         }
 
-        Task<int> ICache.AddItemAsync(string key, object value)
+        Task<bool> ICache.AddItemAsync(string key, object value)
         {
             AddItem(key, value);
-            return Task.FromResult(0);
+            return Task.FromResult(true);
         }
 
         Task<object> ICache.GetItemAsync(string key)
@@ -109,10 +109,10 @@ namespace Lu.Caching
             return Task.FromResult<T>(GetItem<T>(key,remove));
         }
 
-        Task<int> ICache.RemoveItemAsync(string key)
+        Task<bool> ICache.RemoveItemAsync(string key)
         {
             RemoveItem(key);
-            return Task.FromResult(0);
+            return Task.FromResult(true);
         }
     }
 }
