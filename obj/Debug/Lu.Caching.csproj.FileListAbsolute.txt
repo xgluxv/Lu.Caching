@@ -1,5 +1,0 @@
-C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\bin\Debug\Lu.Caching.dll
-C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\bin\Debug\Lu.Caching.pdb
-C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\obj\Debug\Lu.Caching.csprojResolveAssemblyReference.cache
-C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\obj\Debug\Lu.Caching.dll
-C:\Users\xgluxv\SkyDrive\Code\my\2014\Lu.Caching\obj\Debug\Lu.Caching.pdb
